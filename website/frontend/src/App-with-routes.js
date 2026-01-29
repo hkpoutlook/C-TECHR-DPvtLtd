@@ -157,3 +157,37 @@ function App() {
 }
 
 export default App;
+
+/**
+ * ========================================
+ * COMPLETE URL ROUTING MAP
+ * ========================================
+ * 
+ * PUBLIC ROUTES:
+ * ─────────────
+ * /                        Home page
+ * /about                   About company
+ * /contact                 Contact form
+ * /certifications          Company certifications
+ * /library                 All content in one place
+ * /concept-books           Concept books catalog
+ * /products                Products catalog
+ * /research                Research papers catalog
+ * /payment                 Payment/purchase page
+ * /donate                  Donation page
+ * /payment-success         Payment confirmation
+ * /payment-failed          Payment error
+ * /donation-success        Donation confirmation
+ * /donation-leaderboard    Top donors list
+ * /login                   User login
+ * /signup                  User registration
+ * 
+ * PROTECTED ROUTES (Authentication Required):
+ * ───────────────────────────────────────────
+ * /account                 User dashboard
+ * /account/subscriptions   Manage subscriptions
+ * /account/payments        Payment history
+ * /account/donations       Donation history
+ * 
+ * ========================================
+ */
