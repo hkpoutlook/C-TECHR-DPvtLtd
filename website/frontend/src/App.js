@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import CategoryView from './components/CategoryView';
 import Home from './pages/Home';
 import About from './pages/About';
 import ConceptBooks from './pages/ConceptBooks';
@@ -19,6 +20,7 @@ function App() {
         <main>
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/library" element={<CategoryView />} />
             <Route path="/about" element={<About />} />
             <Route path="/concept-books" element={<ConceptBooks />} />
             <Route path="/components" element={<Components />} />
