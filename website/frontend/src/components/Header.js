@@ -5,7 +5,7 @@ function Header() {
   return (
     <header>
       <nav>
-        <div className="logo">C-TECH R&D</div>
+        <div className="logo">C-TECH Research & Development Pvt. Ltd.</div>
         <ul>
           <li><Link to="/">Home</Link></li>
           <li><Link to="/about">About</Link></li>
