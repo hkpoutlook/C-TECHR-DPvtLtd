@@ -1,0 +1,169 @@
+================================================================================
+                    🚀 DEPLOYMENT QUICK START GUIDE
+================================================================================
+
+GOAL: Get your website live with a free URL for end users
+
+TIME: 20-30 minutes
+COST: $0 (Completely Free)
+
+================================================================================
+                            WHAT YOU NEED
+================================================================================
+
+1. GitHub Account (free) - https://github.com
+2. Vercel Account (free) - https://vercel.com
+3. Freenom Account (free) - https://www.freenom.com
+
+================================================================================
+                        STEP-BY-STEP PROCESS
+================================================================================
+
+STEP 1: CREATE GITHUB ACCOUNT (2 min)
+────────────────────────────────────────────────────────────────────────────
+1. Go to https://github.com
+2. Click "Sign up"
+3. Enter email, password, username
+4. Verify email
+5. Done!
+
+STEP 2: PUSH CODE TO GITHUB (5 min)
+────────────────────────────────────────────────────────────────────────────
+1. Create new repository: "ctech-rd"
+2. Clone repository locally
+3. Copy your website files
+4. Push to GitHub
+   git add .
+   git commit -m "Initial commit"
+   git push origin main
+
+STEP 3: DEPLOY TO VERCEL (5 min)
+────────────────────────────────────────────────────────────────────────────
+1. Go to https://vercel.com
+2. Sign up with GitHub
+3. Click "New Project"
+4. Select "ctech-rd" repository
+5. Configure:
+   - Framework: React
+   - Root Directory: website/frontend
+   - Build Command: npm run build
+   - Output Directory: build
+6. Click "Deploy"
+7. Wait 2-5 minutes
+8. Get URL: https://ctech-rd.vercel.app ✅
+
+STEP 4: GET FREE DOMAIN (5 min)
+────────────────────────────────────────────────────────────────────────────
+1. Go to https://www.freenom.com
+2. Search: "ctech-rd"
+3. Choose: .tk (or .ml, .ga, .cf)
+4. Click "Get it now!"
+5. Select "12 Months FREE"
+6. Complete checkout
+7. Verify email
+8. Domain registered ✅
+
+STEP 5: CONNECT DOMAIN TO VERCEL (10 min)
+────────────────────────────────────────────────────────────────────────────
+In Vercel:
+1. Open project
+2. Settings → Domains
+3. Add Domain: ctech-rd.tk
+4. Copy nameservers
+
+In Freenom:
+1. My Domains → Your Domain
+2. Manage Domain → Management Tools → Nameservers
+3. Select "Use custom nameservers"
+4. Paste Vercel nameservers
+5. Save
+
+STEP 6: WAIT FOR DNS (24-48 hours)
+────────────────────────────────────────────────────────────────────────────
+DNS propagation takes time. Your domain will work after 24-48 hours.
+
+================================================================================
+                          YOUR FINAL URL
+================================================================================
+
+Immediately Available:
+  https://ctech-rd.vercel.app
+
+After DNS Propagation (24-48 hours):
+  https://ctech-rd.tk
+
+Share this URL with end users!
+
+================================================================================
+                        WHAT YOU GET
+================================================================================
+
+✅ Free Hosting (Vercel)
+✅ Free Domain (.tk)
+✅ Free SSL/HTTPS
+✅ Auto-deploy from GitHub
+✅ Unlimited bandwidth
+✅ Professional website
+✅ Live for end users
+
+TOTAL COST: $0
+
+================================================================================
+                        TROUBLESHOOTING
+================================================================================
+
+Domain not working?
+  → Wait 24-48 hours for DNS
+  → Clear browser cache
+  → Try incognito mode
+
+Build failed?
+  → Check Vercel build logs
+  → Ensure npm dependencies installed
+  → Verify package.json scripts
+
+Website looks wrong?
+  → Hard refresh (Ctrl+F5)
+  → Clear cache
+  → Try different browser
+
+================================================================================
+                        RESOURCES
+================================================================================
+
+Vercel: https://vercel.com/docs
+Freenom: https://www.freenom.com/en/faq.html
+GitHub: https://docs.github.com
+
+================================================================================
+                        NEXT ACTIONS
+================================================================================
+
+1. Create GitHub account
+2. Push code to GitHub
+3. Deploy to Vercel
+4. Register domain on Freenom
+5. Connect domain to Vercel
+6. Wait for DNS propagation
+7. Share URL with end users
+
+================================================================================
+                    ESTIMATED TIMELINE
+================================================================================
+
+GitHub Setup:        2 minutes
+Push Code:           5 minutes
+Deploy to Vercel:    5 minutes
+Register Domain:     5 minutes
+Connect Domain:      10 minutes
+DNS Propagation:     24-48 hours
+────────────────────────────────
+TOTAL:               20-30 minutes + 24-48 hours
+
+================================================================================
+
+Your website will be live and accessible to everyone! 🎉
+
+For detailed instructions, see: DEPLOY_TO_VERCEL_GUIDE.md
+
+================================================================================
