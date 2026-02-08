@@ -1,11 +1,21 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { logoBase64 } from '../assets/logo';
 
 function Header() {
   return (
     <header>
       <nav>
-        <div className="logo">C-TECH Research & Development Pvt. Ltd.</div>
+        <Link to="/" className="logo-container">
+          <img 
+            src={logoBase64}
+            alt="C-TECH Logo" 
+            className="logo-image"
+            width="50" 
+            height="50"
+          />
+          <div className="logo">C-TECH Research & Development Pvt. Ltd.</div>
+        </Link>
         <ul>
           <li><Link to="/">Home</Link></li>
           <li><Link to="/about">About</Link></li>

@@ -8,3 +8,76 @@ main {
   flex: 1;
   background-color: #f5f7fa;
 }
+
+/* Logo Styling */
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s ease;
+  padding: 8px 5px;
+  border-radius: 10px;
+  margin-right: auto;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.logo-container:hover {
+  opacity: 0.9;
+  background-color: #f8f9fa;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.logo-image {
+  display: block;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 4px rgba(65, 105, 225, 0.3));
+  transition: transform 0.3s ease;
+}
+
+.logo-container:hover .logo-image {
+  transform: scale(1.05);
+}
+
+.logo {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #2c3e50;
+  letter-spacing: 0.5px;
+  background: linear-gradient(135deg, #2c3e50 0%, #4169E1 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  white-space: nowrap;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0.5rem;
+  background: white;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #2c3e50;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+  color: #4169E1;
+}
