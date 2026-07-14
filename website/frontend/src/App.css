@@ -57,18 +57,72 @@ main {
 header nav {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 1rem 0.5rem;
-  background: white;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  justify-content: center;
+  padding: 1rem 1rem;
+  background: #4169E1;
+  box-shadow: 0 4px 16px rgba(65, 105, 225, 0.25);
 }
 
 header nav ul {
   display: flex;
   list-style: none;
-  gap: 2rem;
+  gap: 1.75rem;
   margin: 0;
   padding: 0;
+}
+
+.header-brand {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.header-brand .logo-container {
+  background: rgba(255,255,255,0.1);
+  padding: 10px 14px;
+  border-radius: 16px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 600;
+  transition: opacity 0.25s ease;
+}
+
+header nav ul li a:hover {
+  opacity: 0.8;
+}
+
+.logo {
+  font-size: 1.45rem;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: 0.75px;
+  text-shadow: none;
+  background: none;
+  -webkit-text-fill-color: currentColor;
+}
+
+.logo-image {
+  filter: drop-shadow(0 1px 6px rgba(0, 0, 0, 0.16));
+}
+
+.logo-container:hover {
+  background-color: rgba(255,255,255,0.18);
+  transform: translateY(-1px);
+}
+
+.small-brand {
+  gap: 10px;
+}
+
+.logo.small-logo {
+  font-size: 1rem;
+  letter-spacing: 0.75px;
 }
 
 header nav ul li a {

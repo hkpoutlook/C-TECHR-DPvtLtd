@@ -5,100 +5,272 @@ function Home() {
   return (
     <>
       {/* Hero Section */}
-      <section className="hero">
-        <h1>C-TECH Research & Development Pvt. Ltd.</h1>
-        <p>Building a research-driven ecosystem connecting education, industry, and research to create impactful science and technology.</p>
-        <div className="cta-buttons">
-          <Link to="/concept-books" className="btn btn-primary">Explore Knowledge</Link>
-          <Link to="/contact" className="btn btn-secondary">Get Started</Link>
+      <section style={{ 
+        background: 'linear-gradient(135deg, #4169E1 0%, #2c3e50 100%)', 
+        color: 'white', 
+        padding: '80px 2rem',
+        textAlign: 'center'
+      }}>
+        <h1 style={{ fontSize: '3rem', marginBottom: '1rem' }}>Complete Solution for Practical & Graphical Teaching</h1>
+        <p style={{ fontSize: '1.4rem', marginBottom: '2rem', opacity: '0.95' }}>
+          Learn science and technology through hands-on experiments, interactive visualizations, and real-world applications
+        </p>
+        <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
+          <Link to="/concept-books" style={{ 
+            padding: '12px 30px', 
+            backgroundColor: 'white', 
+            color: '#4169E1', 
+            textDecoration: 'none',
+            borderRadius: '5px',
+            fontWeight: 'bold',
+            fontSize: '1.1rem'
+          }}>Start Learning Free</Link>
+          <Link to="/contact" style={{ 
+            padding: '12px 30px', 
+            backgroundColor: 'transparent',
+            color: 'white',
+            border: '2px solid white',
+            textDecoration: 'none',
+            borderRadius: '5px',
+            fontWeight: 'bold',
+            fontSize: '1.1rem'
+          }}>Get in Touch</Link>
         </div>
       </section>
 
       {/* Main Content */}
-      <div className="container">
-        {/* Vision & Mission */}
-        <section>
-          <h2>Our Vision & Mission</h2>
-          <div className="cards-grid">
-            <div className="card">
-              <h4>🌍 Vision</h4>
-              <p>Building a research-based knowledge ecosystem connecting educational institutions, industries, and research institutes, leading to meaningful products and scientific research.</p>
+      <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '2rem' }}>
+        
+        {/* Practical & Graphical Teaching */}
+        <section style={{ marginBottom: '3rem', textAlign: 'center' }}>
+          <h2 style={{ fontSize: '2.5rem', color: '#2c3e50', marginBottom: '2rem' }}>Our Teaching Approach</h2>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '2rem' }}>
+            
+            <div style={{ 
+              padding: '2rem', 
+              backgroundColor: '#f8f9fa', 
+              borderRadius: '10px',
+              boxShadow: '0 2px 8px rgba(0,0,0,0.1)',
+              borderTop: '4px solid #4169E1'
+            }}>
+              <div style={{ fontSize: '3rem', marginBottom: '1rem' }}>📊</div>
+              <h3 style={{ color: '#4169E1', marginBottom: '0.5rem' }}>Graphical Learning</h3>
+              <p style={{ color: '#555' }}>Interactive diagrams, simulations, and visual representations help you understand complex concepts instantly.</p>
             </div>
-            <div className="card">
-              <h4>🎯 Mission</h4>
-              <p>Strengthen basic science through technical development. Transform conceptual understanding into practical technology. Bridge the gap between education and industry.</p>
+
+            <div style={{ 
+              padding: '2rem', 
+              backgroundColor: '#f8f9fa', 
+              borderRadius: '10px',
+              boxShadow: '0 2px 8px rgba(0,0,0,0.1)',
+              borderTop: '4px solid #28a745'
+            }}>
+              <div style={{ fontSize: '3rem', marginBottom: '1rem' }}>🔬</div>
+              <h3 style={{ color: '#28a745', marginBottom: '0.5rem' }}>Practical Experiments</h3>
+              <p style={{ color: '#555' }}>Build real circuits, conduct measurements, and perform hands-on experiments with actual components.</p>
             </div>
-            <div className="card">
-              <h4>🧠 Core Philosophy</h4>
-              <p>Strong technology cannot exist without strong science. Concept > Code. Understanding > Certificates. Experimentation > Theory alone.</p>
+
+            <div style={{ 
+              padding: '2rem', 
+              backgroundColor: '#f8f9fa', 
+              borderRadius: '10px',
+              boxShadow: '0 2px 8px rgba(0,0,0,0.1)',
+              borderTop: '4px solid #ffc107'
+            }}>
+              <div style={{ fontSize: '3rem', marginBottom: '1rem' }}>🎓</div>
+              <h3 style={{ color: '#ffc107', marginBottom: '0.5rem' }}>Theory to Application</h3>
+              <p style={{ color: '#555' }}>Connect theoretical knowledge to real-world applications and industry-standard solutions.</p>
             </div>
+
           </div>
         </section>
 
-        {/* Three Pillars */}
-        <section>
-          <h2>Three Pillars of C-TECH</h2>
-          <div className="cards-grid">
-            <div className="card">
-              <h4>📚 Knowledge Ecosystem</h4>
-              <p><strong>Concept Books</strong> • Training Programs • Certifications</p>
-              <p>Research-driven learning for students, engineers, and researchers.</p>
-              <p><Link to="/concept-books" className="btn btn-primary" style={{ marginTop: '1rem', display: 'inline-block', padding: '8px 16px', fontSize: '0.9rem' }}>Explore Books</Link></p>
+        {/* Four Levels of Learning */}
+        <section style={{ marginBottom: '3rem', backgroundColor: '#f8f9fa', padding: '2rem', borderRadius: '10px' }}>
+          <h2 style={{ fontSize: '2.5rem', color: '#2c3e50', marginBottom: '2rem', textAlign: 'center' }}>Progressive Learning Levels</h2>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '1.5rem' }}>
+            
+            <div style={{ padding: '1.5rem', backgroundColor: 'white', borderRadius: '8px', borderLeft: '4px solid #4CAF50' }}>
+              <h3 style={{ color: '#4CAF50' }}>📖 Level 1: Concepts</h3>
+              <p>Understand the fundamental theories and scientific principles</p>
+              <p style={{ fontSize: '0.9rem', color: '#999' }}>Free access to basics</p>
             </div>
-            <div className="card">
-              <h4>⚙️ Components & Hardware</h4>
-              <p><strong>Foundational • Professional • Research-Grade</strong></p>
-              <p>Industrial-grade components selected for reliability and performance.</p>
-              <p><Link to="/components" className="btn btn-primary" style={{ marginTop: '1rem', display: 'inline-block', padding: '8px 16px', fontSize: '0.9rem' }}>View Components</Link></p>
+
+            <div style={{ padding: '1.5rem', backgroundColor: 'white', borderRadius: '8px', borderLeft: '4px solid #2196F3' }}>
+              <h3 style={{ color: '#2196F3' }}>⚙️ Level 2: Components</h3>
+              <p>Learn about sensors, instruments, and industrial components</p>
+              <p style={{ fontSize: '0.9rem', color: '#999' }}>Hands-on component selection</p>
             </div>
-            <div className="card">
-              <h4>🚀 Products & Innovation</h4>
-              <p><strong>Educational • Industrial • Research-Grade</strong></p>
-              <p>From learning systems to next-generation technology solutions.</p>
-              <p><Link to="/products" className="btn btn-primary" style={{ marginTop: '1rem', display: 'inline-block', padding: '8px 16px', fontSize: '0.9rem' }}>Explore Products</Link></p>
+
+            <div style={{ padding: '1.5rem', backgroundColor: 'white', borderRadius: '8px', borderLeft: '4px solid #FF9800' }}>
+              <h3 style={{ color: '#FF9800' }}>🔧 Level 3: Practical Skills</h3>
+              <p>Build circuits, perform measurements, and conduct experiments</p>
+              <p style={{ fontSize: '0.9rem', color: '#999' }}>Certification programs available</p>
             </div>
+
+            <div style={{ padding: '1.5rem', backgroundColor: 'white', borderRadius: '8px', borderLeft: '4px solid #9C27B0' }}>
+              <h3 style={{ color: '#9C27B0' }}>🚀 Level 4: Innovation</h3>
+              <p>Develop original products and contribute to research</p>
+              <p style={{ fontSize: '0.9rem', color: '#999' }}>R&D collaboration opportunities</p>
+            </div>
+
           </div>
         </section>
 
-        {/* Business Model */}
-        <section>
-          <h2>Start Free • Go Deep When Ready</h2>
-          <h3>Our Access Model</h3>
-          <div className="cards-grid">
-            <div className="card">
-              <h4>🆓 Free Foundation</h4>
-              <p>✔ Concept overviews</p>
-              <p>✔ Sample chapters</p>
-              <p>✔ Basic component lists</p>
-              <p>✔ Product introductions</p>
+        {/* Three Core Offerings */}
+        <section style={{ marginBottom: '3rem' }}>
+          <h2 style={{ fontSize: '2.5rem', color: '#2c3e50', marginBottom: '2rem', textAlign: 'center' }}>Our Complete Offerings</h2>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem' }}>
+            
+            <div style={{ 
+              padding: '2rem', 
+              backgroundColor: 'white', 
+              borderRadius: '10px',
+              boxShadow: '0 4px 12px rgba(0,0,0,0.1)',
+              transition: 'transform 0.3s ease'
+            }}>
+              <h3 style={{ color: '#4169E1', marginBottom: '1rem', fontSize: '1.5rem' }}>📚 Knowledge Ecosystem</h3>
+              <ul style={{ lineHeight: '1.8', color: '#555' }}>
+                <li>✓ Research-based concept books</li>
+                <li>✓ Interactive learning modules</li>
+                <li>✓ Video tutorials & demonstrations</li>
+                <li>✓ Professional certifications</li>
+              </ul>
+              <Link to="/concept-books" style={{ 
+                display: 'inline-block',
+                marginTop: '1.5rem',
+                padding: '10px 20px',
+                backgroundColor: '#4169E1',
+                color: 'white',
+                textDecoration: 'none',
+                borderRadius: '5px',
+                fontWeight: 'bold'
+              }}>Explore</Link>
             </div>
-            <div className="card">
-              <h4>💳 Paid Professional</h4>
-              <p>✔ Full books & content</p>
-              <p>✔ Detailed specifications</p>
-              <p>✔ Training & certification</p>
-              <p>✔ Engineer consultation</p>
+
+            <div style={{ 
+              padding: '2rem', 
+              backgroundColor: 'white', 
+              borderRadius: '10px',
+              boxShadow: '0 4px 12px rgba(0,0,0,0.1)'
+            }}>
+              <h3 style={{ color: '#28a745', marginBottom: '1rem', fontSize: '1.5rem' }}>🔧 Practical Components</h3>
+              <ul style={{ lineHeight: '1.8', color: '#555' }}>
+                <li>✓ Sensors & measurement tools</li>
+                <li>✓ Educational kits</li>
+                <li>✓ Industrial-grade equipment</li>
+                <li>✓ Hands-on experiment bundles</li>
+              </ul>
+              <Link to="/products" style={{ 
+                display: 'inline-block',
+                marginTop: '1.5rem',
+                padding: '10px 20px',
+                backgroundColor: '#28a745',
+                color: 'white',
+                textDecoration: 'none',
+                borderRadius: '5px',
+                fontWeight: 'bold'
+              }}>Explore</Link>
             </div>
-            <div className="card">
-              <h4>🔬 R&D Partnerships</h4>
-              <p>✔ Research collaboration</p>
-              <p>✔ Custom development</p>
-              <p>✔ Joint innovation</p>
-              <p>✔ Product development</p>
+
+            <div style={{ 
+              padding: '2rem', 
+              backgroundColor: 'white', 
+              borderRadius: '10px',
+              boxShadow: '0 4px 12px rgba(0,0,0,0.1)'
+            }}>
+              <h3 style={{ color: '#FF9800', marginBottom: '1rem', fontSize: '1.5rem' }}>🚀 Research & Innovation</h3>
+              <ul style={{ lineHeight: '1.8', color: '#555' }}>
+                <li>✓ Collaborative research projects</li>
+                <li>✓ Custom development services</li>
+                <li>✓ Research publications</li>
+                <li>✓ Innovation partnerships</li>
+              </ul>
+              <Link to="/research" style={{ 
+                display: 'inline-block',
+                marginTop: '1.5rem',
+                padding: '10px 20px',
+                backgroundColor: '#FF9800',
+                color: 'white',
+                textDecoration: 'none',
+                borderRadius: '5px',
+                fontWeight: 'bold'
+              }}>Explore</Link>
+            </div>
+
+          </div>
+        </section>
+
+        {/* Why Choose Us */}
+        <section style={{ marginBottom: '3rem', backgroundColor: '#f8f9fa', padding: '2rem', borderRadius: '10px' }}>
+          <h2 style={{ fontSize: '2.5rem', color: '#2c3e50', marginBottom: '2rem', textAlign: 'center' }}>Why Choose C-TECH for Learning Science & Technology?</h2>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '1.5rem' }}>
+            <div style={{ textAlign: 'center' }}>
+              <div style={{ fontSize: '2.5rem', marginBottom: '0.5rem' }}>🎯</div>
+              <h4 style={{ color: '#4169E1' }}>Practical Focus</h4>
+              <p style={{ color: '#555', fontSize: '0.95rem' }}>Learn by doing, not just reading</p>
+            </div>
+            <div style={{ textAlign: 'center' }}>
+              <div style={{ fontSize: '2.5rem', marginBottom: '0.5rem' }}>📊</div>
+              <h4 style={{ color: '#4169E1' }}>Visual Learning</h4>
+              <p style={{ color: '#555', fontSize: '0.95rem' }}>Complex concepts made simple with graphics</p>
+            </div>
+            <div style={{ textAlign: 'center' }}>
+              <div style={{ fontSize: '2.5rem', marginBottom: '0.5rem' }}>🔬</div>
+              <h4 style={{ color: '#4169E1' }}>Research-Based</h4>
+              <p style={{ color: '#555', fontSize: '0.95rem' }}>Content validated by experts</p>
+            </div>
+            <div style={{ textAlign: 'center' }}>
+              <div style={{ fontSize: '2.5rem', marginBottom: '0.5rem' }}>💼</div>
+              <h4 style={{ color: '#4169E1' }}>Industry-Aligned</h4>
+              <p style={{ color: '#555', fontSize: '0.95rem' }}>Real-world applications included</p>
+            </div>
+            <div style={{ textAlign: 'center' }}>
+              <div style={{ fontSize: '2.5rem', marginBottom: '0.5rem' }}>🆓</div>
+              <h4 style={{ color: '#4169E1' }}>Free Basics</h4>
+              <p style={{ color: '#555', fontSize: '0.95rem' }}>Start learning without cost</p>
+            </div>
+            <div style={{ textAlign: 'center' }}>
+              <div style={{ fontSize: '2.5rem', marginBottom: '0.5rem' }}>🌍</div>
+              <h4 style={{ color: '#4169E1' }}>Global Community</h4>
+              <p style={{ color: '#555', fontSize: '0.95rem' }}>Connect with researchers worldwide</p>
             </div>
           </div>
         </section>
 
         {/* Call to Action */}
-        <section style={{ textAlign: 'center', background: 'linear-gradient(135deg, #003d82 0%, #005a99 100%)', color: 'white', padding: '60px 2rem' }}>
-          <h2 style={{ color: 'white' }}>Ready to Start Your Journey?</h2>
-          <p style={{ fontSize: '1.1rem', marginBottom: '2rem' }}>Explore concept books, learn new skills, and connect with our research community.</p>
-          <div className="cta-buttons">
-            <Link to="/concept-books" className="btn btn-primary">Explore Free Content</Link>
-            <Link to="/certifications" className="btn btn-secondary">View Certifications</Link>
-            <Link to="/contact" className="btn btn-secondary">Get in Touch</Link>
+        <section style={{ 
+          textAlign: 'center', 
+          background: 'linear-gradient(135deg, #4169E1 0%, #2c3e50 100%)', 
+          color: 'white', 
+          padding: '60px 2rem',
+          borderRadius: '10px'
+        }}>
+          <h2 style={{ fontSize: '2.5rem', marginBottom: '1rem' }}>Ready to Learn Science Through Practice?</h2>
+          <p style={{ fontSize: '1.2rem', marginBottom: '2rem' }}>Begin your journey from concepts to innovation</p>
+          <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
+            <Link to="/concept-books" style={{ 
+              padding: '12px 30px', 
+              backgroundColor: 'white', 
+              color: '#4169E1', 
+              textDecoration: 'none',
+              borderRadius: '5px',
+              fontWeight: 'bold',
+              fontSize: '1.1rem'
+            }}>Explore Free Learning</Link>
+            <Link to="/products" style={{ 
+              padding: '12px 30px', 
+              backgroundColor: 'transparent',
+              color: 'white',
+              border: '2px solid white',
+              textDecoration: 'none',
+              borderRadius: '5px',
+              fontWeight: 'bold',
+              fontSize: '1.1rem'
+            }}>View Components & Kits</Link>
           </div>
         </section>
+
       </div>
     </>
   );

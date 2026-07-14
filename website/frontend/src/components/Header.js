@@ -5,7 +5,7 @@ import { logoBase64 } from '../assets/logo';
 function Header() {
   return (
     <header>
-      <nav>
+      <div className="header-brand">
         <Link to="/" className="logo-container">
           <img 
             src={logoBase64}
@@ -16,6 +16,9 @@ function Header() {
           />
           <div className="logo">C-TECH Research & Development Pvt. Ltd.</div>
         </Link>
+      </div>
+
+      <nav>
         <ul>
           <li><Link to="/">Home</Link></li>
           <li><Link to="/about">About</Link></li>
